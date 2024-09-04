@@ -228,3 +228,149 @@
     transform: rotate(0deg);
   }
 }
+
+/* Navbar styles */
+.stickyNavbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff; 
+  border-bottom: 1px solid #e0e0e0; 
+  padding: 10px 20px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s; 
+}
+
+.stickyNavbar:hover {
+  background-color: #f8f9fa; 
+}
+
+.navContent {
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+}
+
+.navbarBrandText {
+  margin: 0;
+  font-size: 1.6rem; 
+  font-weight: 700;
+  color: #333; 
+  text-transform: uppercase;
+}
+
+.navbarItem {
+  display: flex;
+  align-items: center;
+}
+
+.navbarItem a {
+  color: #0070f3;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px; 
+  font-size: 1rem; 
+  font-weight: 500; 
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.navbarItem a:hover {
+  background-color: #e0f7ff; 
+  color: #0056b3; 
+  transform: translateY(-2px); 
+}
+
+.navbarItem.isActive a {
+  background-color: #0070f3;
+  color: #ffffff;
+  font-weight: 600; 
+}
+
+
+
+
+/* USERS MAIN*/
+
+/* Estilos generales para el contenedor principal */
+.main {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Estilos para el Navbar */
+
+
+/* Estilos para el contenido del listado */
+.user {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.user h1 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.user h1:last-of-type {
+  font-size: 1em;
+  color: #555;
+}
+
+.userButton {
+  margin-top: 10px;
+}
+
+/* Estilos para el modal */
+.modalContent {
+  padding: 20px;
+}
+
+.modalHeader {
+  background-color: #f8f9fa;
+}
+
+.modalBody {
+  background-color: #ffffff;
+}
+
+.modalFooter {
+  background-color: #f8f9fa;
+}
+
+.modalTitle {
+  font-size: 1.5em;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilos para cada tarjeta */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.card p {
+  margin: 5px 0;
+}
